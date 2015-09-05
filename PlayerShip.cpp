@@ -1,10 +1,11 @@
-
-#include "PlayerShip.h"
 #include <iostream>
+#include "PlayerShip.h"
+using namespace std;
 PlayerShip::PlayerShip()
 {
-	//_pPosition.x =0;
-	//_pPosition.y =0;
+	_pPosition.x =100;
+	_pPosition.y =200;
+	_speed = 0.05;
 }
 
 Position PlayerShip::move(pDirection dir)
@@ -12,20 +13,28 @@ Position PlayerShip::move(pDirection dir)
 	switch(dir)
 	{
 		case pDirection::up:
-			_pPosition.y -= 0.05;
-			std::cout << _pPosition.y << std::endl;
+			_pPosition.y --;
+			//cout<<_pPosition.x<< _pPosition.y <<endl;
 			break;
 		case pDirection::down:
-			_pPosition.y += 0.05;
+			_pPosition.y ++;
+			//cout<<_pPosition.x<< _pPosition.y <<endl;
 			break;
 		case pDirection::left:
-			_pPosition.x -=0.05;
+			_pPosition.x --;
+			//cout<<_pPosition.x<< _pPosition.y <<endl;
 			break;
 		case pDirection::right:
-			_pPosition.x +=0.05;
+			_pPosition.x ++;
+			//cout<<_pPosition.x<< _pPosition.y <<endl;
 			break;
 	}
 	return _pPosition;
+}
+
+float PlayerShip::getSpeed() const
+{
+	return _speed;
 }
 
 //Player::getPosition()

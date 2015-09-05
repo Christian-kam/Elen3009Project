@@ -1,4 +1,4 @@
-
+#include <iostream>
 #include "GameView.h"
 
 GameView::GameView()
@@ -28,13 +28,13 @@ void GameView::run()
 	bool updateFrame = true;
 	while(_screen.isOpen())
 	{
-		EventManager eventManager;
+		
 		sf::Event event;
 		while (_screen.pollEvent(event))
 		{
-			eventManager.processEvent(event);
+			_eventManager.processEvent(event);
 		}
-		updateScreen(eventManager);
+		updateScreen(_eventManager);
 		if(updateFrame)
 			frameCounter += frameSpeed*clock.restart().asSeconds();
 		else
@@ -57,24 +57,28 @@ void GameView::renderScreen()
 void GameView::updateScreen(const EventManager& eventManager)
 {
 	sf::Vector2f movement(0.f, 0.f);
+	_moveUp = eventManager.getUp();
+	_moveDown = eventManager.getDown();
+	_moveLeft = eventManager.getLeft();
+	_moveRight = eventManager.getRight();
 	if(_moveUp)
 	{
-		movement.y =eventManager.getYPosition();
+		movement.y = - eventManager.getSpeed();
 	}
 	if(_moveDown)
 	{
-		movement.y =eventManager.getYPosition();
+		movement.y = eventManager.getSpeed();
 	}
 	if(_moveLeft)
 	{
 		_playerID.setTexture(_playerTexture);
 		_playerID.setRotation(0);
-		movement.x =eventManager.getXPosition();
+		movement.x = - eventManager.getSpeed();
 	}
 	if(_moveRight)
 	{
 		_playerID.setRotation(180);
-		movement.x =eventManager.getXPosition();
+		movement.x = eventManager.getSpeed();
 	}
 	_playerID.move(movement);
 

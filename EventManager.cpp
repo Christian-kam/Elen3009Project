@@ -29,32 +29,67 @@ void EventManager::processEvent(const Event& event)
 			case Event::KeyReleased:
 				handleUserInput(event.key.code, false);
 				break;
-//			case Event::Closed:
-//				_screen.close();
-//				break;
+			//case Event::Closed:
+			//	_screen.close();
+			//	break;
 		}
 	//}
 }
 
 void EventManager::handleUserInput(Keyboard::Key key, bool isPressed)
 {
-	switch(key)
+	_moveUp = false;
+	_moveDown = false;
+	_moveLeft = false;
+	_moveRight = false;
+	
+	if(isPressed)
 	{
-		case Keyboard::W:
-			_moveUp = isPressed;
-			_playerPosition = _player.move(pDirection::up);
-			break;
-		case Keyboard::S:
-			_moveDown = isPressed;
-			_playerPosition = _player.move(pDirection::down);
-			break;
-		case Keyboard::A:
-			_moveLeft = isPressed;
-			_playerPosition = _player.move(pDirection::left);
-			break;
-		case Keyboard::D:
-			_moveRight = isPressed;
-			_playerPosition = _player.move(pDirection::right);
-			break;
+		switch(key)
+		{
+			case Keyboard::W:
+				_moveUp = isPressed;
+				_playerPosition = _player.move(pDirection::up);
+				break;
+			case Keyboard::S:
+				_moveDown = isPressed;
+				_playerPosition = _player.move(pDirection::down);
+				break;
+			case Keyboard::A:
+				_moveLeft = isPressed;
+				_playerPosition = _player.move(pDirection::left);
+				break;
+			case Keyboard::D:
+				_moveRight = isPressed;
+				_playerPosition = _player.move(pDirection::right);
+				break;
+		}
+		
 	}
+}
+
+bool EventManager::getUp() const
+{
+	return _moveUp;
+}
+
+bool EventManager::getDown() const
+{
+	return _moveDown;
+}
+
+bool EventManager::getLeft() const
+{
+	return _moveLeft;
+}
+
+bool EventManager::getRight() const
+{
+	return _moveRight;
+}
+
+float EventManager::getSpeed() const
+{
+	return _player.getSpeed();
+
 }

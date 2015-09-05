@@ -20,8 +20,10 @@ class PlayerShip // : Spaceship inheritance
 public:
 	PlayerShip();
 	Position move(pDirection dir);
+	float getSpeed() const;
 private:
 	Position _pPosition;
+	float _speed;
 };
 
 #endif

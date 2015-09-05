@@ -33,6 +33,7 @@ private:
 	bool _moveDown;
 	bool _moveLeft;
 	bool _moveRight;
+	EventManager _eventManager;
 };
 
 #endif
