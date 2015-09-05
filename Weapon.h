@@ -10,12 +10,14 @@ enum class WeaponType
 	smartBomb,
 	mine
 };
+
 class Weapon
 {
 public:
 	
 private:
-	//texture
+	//bool currently shooting
+	//
 };
 
 #endif
