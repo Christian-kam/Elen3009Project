@@ -5,7 +5,7 @@ PlayerShip::PlayerShip()
 {
 	_pPosition.x =100;
 	_pPosition.y =200;
-	_speed = 0.05;
+	_speed = 0.5;
 }
 
 Position PlayerShip::move(pDirection dir)

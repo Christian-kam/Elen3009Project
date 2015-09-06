@@ -1,10 +1,5 @@
 #include "EventManager.h"
 
-//EventManager::EventManager(renderWindow& screen): _screen{screen}
-//{
-//	
-//}
-
 float EventManager::getXPosition() const 
 {
 	return _playerPosition.x;
@@ -17,23 +12,15 @@ float EventManager::getYPosition() const
 
 void EventManager::processEvent(const Event& event)
 {
-	//Event event;
-	
-	//while (_screen.pollEvent(event))
-	//{
-		switch(event.type)
-		{
-			case Event::KeyPressed:
-				handleUserInput(event.key.code, true);
-				break;
-			case Event::KeyReleased:
-				handleUserInput(event.key.code, false);
-				break;
-			//case Event::Closed:
-			//	_screen.close();
-			//	break;
-		}
-	//}
+	switch(event.type)
+	{
+		case Event::KeyPressed:
+			handleUserInput(event.key.code, true);
+			break;
+		case Event::KeyReleased:
+			handleUserInput(event.key.code, false);
+			break;
+	}
 }
 
 void EventManager::handleUserInput(Keyboard::Key key, bool isPressed)

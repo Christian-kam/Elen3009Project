@@ -32,7 +32,14 @@ void GameView::run()
 		sf::Event event;
 		while (_screen.pollEvent(event))
 		{
-			_eventManager.processEvent(event);
+			if(event.type == Event::Closed)
+			{
+				_screen.close();
+			}
+			else
+			{
+				_eventManager.processEvent(event);
+			}
 		}
 		updateScreen(_eventManager);
 		if(updateFrame)
