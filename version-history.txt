@@ -1,0 +1,371 @@
+#################################################################
+#								#
+# Developers: Catherine Honegger(566247)			#
+#	      Christian Kamwangala (685344)			#
+#								#
+#								#
+#								#
+#################################################################
+
+Version 1.0
+Release Date: 29/08/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+The player's ship exists and is visible on the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively.
+
+Version 1.1
+Release Date: 31/08/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+Google unit tests have been included in the program.
+
+Version 1.2
+Release Date: 03/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality: 
+The player's ship exists and is visible in the screen.
+Changed:
+The program has been restarted to include object-oriented programming techniques.
+
+Version 2.0
+Release Date: 04/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality: 
+The player's ship exists and is visible in the screen.
+The player's ship moves constantly upwards and downwards when the 'W' and 'S' keys are presssed respectively.
+Google unit tests have been included in the program.
+Changed: 
+The program is now more Object-oriented with a GameView class that deals with SFML and displaying objects on the screen, a PlayerShip class that deals with the logic of how the player's ship moves, and an EventManager class that links the GameView class and the PlayerShip class based on inputs from the user.
+
+Version 2.1
+Release Date: 05/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+Google unit tests exist for the program.
+Fixed:
+The program no longer moves constantly when a key is pressed, but only one place.
+
+Version 2.2
+Release Date: 06/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+Changed:
+The program was refactored with better programming techniques.
+
+Version 2.3
+Release Date: 10/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship has a bullet, and is able to shoot.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+
+Version 3.0
+Release Date: 14/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+A lander ship exists and is visible in the screen.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+Changed:
+The program was refactored to include inheritence and smart pointers.
+
+Version 3.1
+Release Date: 15/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+A lander ship exists and is visible in the screen.
+The lander moves randomly across the screen.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+
+Version 3.2
+Release Date: 16/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The are two lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+
+Version 3.3
+Release Date: 18/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+
+Version 3.4
+Release Date: 19/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Collision detection between the lander and the ship has been included.
+There is a visible background on the screen.
+Google unit tests exist for the program.
+
+Version 3.5
+Release Date: 20/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+The landers automatically shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+
+Version 3.6
+Release Date: 23/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+The landers automatically shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Changed:
+Code was refactored.
+Lander's appear randomly and shoot towards the player's ship.
+
+Version 3.7
+Release Date: 24/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Fixed:
+The Mini-Map highlighting functionality was fixed.
+
+Version 3.8
+Release Date: 25/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Added:
+The game now includes power-ups that randomly appear over time.
+
+Version 3.9
+Release Date: 27/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+Power-ups randomly appear over time.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Added:
+Heat-seeking missiles are assigned to the Player's ship when a power-up is collected.
+
+Version 3.10
+Release Date: 28/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+Power-ups randomly appear over time.
+When the player picks up a power-up they can shoot one heat-seeking missile that target the closest Lander to the player.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Added:
+Power-ups now dissapear over time.
+
+Version 3.11
+Release Date: 30/09/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+Power-ups randomly appear and dissapear over time.
+When the player picks up a power-up they can shoot one heat-seeking missile that target the closest Lander to the player.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Added:
+Scoring has been implemented and is displayed on the screen.
+The player's remaining lives are displayed on the screen.
+The remaining number of landers are displayed on the screen.
+A smart bomb has been implemented.
+The number of smart bombs is displayed on the screen.
+When a smart bomb is released it kills all the Landers on the screen.
+
+Version 3.12
+Release Date: 02/10/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+Power-ups randomly appear and dissapear at the bottom of the screen over time.
+When the player picks up a power-up they can shoot one heat-seeking missile that target the closest Lander to the player.
+There is a scoring system and display.
+The player has three smart bombs.
+When the smart bomb is released it kills all of the Landers on the screen.
+The player has 4 lives.
+The remaining number of lives and smart bombs are displayed on the screen.
+The remaining number of landers are displayed on the screen.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Fixed:
+There are now four heat-seeking missiles when the player collects a power-up.
+The high score is displayed and saved from game to game.
+
+
+Version 4.0
+Release Date: 03/10/2015
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Functionality:
+A player's ship exists and is visible in the screen.
+The ship moves upwards, downwards, left and right when the 'W', 'S', 'A' and 'D' keys are pressed respectively, and switches direction.
+The ship is bounded.
+The ship is capable of shooting.
+The ship has multiple lives.
+The are multiple lander ships that exist and are visible in the screen.
+The landers move randomly across the screen according to a timer.
+The landers are bounded.
+Lander's appear randomly and shoot towards the player's ship.
+Collision detection between the lander and the ship has been included.
+Collision detection between the lander and the ship's laser has been included.
+Collision detection between the lander's missiles and the ship has been included.
+There is a visible background on the screen.
+The screen is capable of scrolling and a mini-map exists at the top of the screen which displays the player, aliens, landscape and highlights the particular section which is currently being shown on the main screen.
+Power-ups randomly appear and dissapear at the bottom of the screen over time.
+When the player picks up a power-up they can shoot four heat-seeking missile that target the closest Lander to the player.
+There is a scoring system and display. high scores are saved from one game to the next, and can be viewed in the game.
+The player has three smart bombs.
+When the smart bomb is released it kills all of the Landers on the screen.
+The player has 4 lives.
+The remaining number of lives and smart bombs are displayed on the screen.
+The remaining number of landers are displayed on the screen.
+The game ends when all landers are destroyed, the player is hit by a missile and has no more lives left, or the player collides with a lander and has no more lives left.
+Google unit tests exist for the program.
+Fixed:
+Code was refactored to make it more usable
