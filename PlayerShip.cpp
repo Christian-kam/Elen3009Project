@@ -1,45 +1,35 @@
-
+ //Catherine Honegger and Christian Kamwangala
+ //
 #include "PlayerShip.h"
-#include <iostream>
-PlayerShip::PlayerShip()
-{
-	//_pPosition.x =0;
-	//_pPosition.y =0;
-}
 
-Position PlayerShip::move(pDirection dir)
+// Static data members of the class;
+ID PlayerShip::_id =ID::playerShip;
+vector2d PlayerShip::_playerSize {65,65};
+objectProperties PlayerShip::info{_id,_playerSize};
+
+PlayerShip::PlayerShip(vector2d _playerPosition)
+:Entity(_playerPosition, info), _lives{4}, _playerSpeed{30}
+{ 
+} // Nothing else to do
+
+void PlayerShip::whenKilled()
 {
-	switch(dir)
+	if(_lives>1)
 	{
-		case pDirection::up:
-			_pPosition.y -= 0.05;
-			std::cout << _pPosition.y << std::endl;
-			break;
-		case pDirection::down:
-			_pPosition.y += 0.05;
-			break;
-		case pDirection::left:
-			_pPosition.x -=0.05;
-			break;
-		case pDirection::right:
-			_pPosition.x +=0.05;
-			break;
+		_lives --;
 	}
-	return _pPosition;
+	else
+    {
+		_isActive = false;
+    }
 }
 
-//Player::getPosition()
-//{
-//	
-//}
+const float PlayerShip::getSpeed() const
+{
+    return _playerSpeed;
+}
 
-//Player::shootStandard()
-//{
-	
-//}
-
-//Player::shootSpecial()
-//{
-	
-
-//}
+const int PlayerShip::getLives() const
+{
+    return _lives;
+}
